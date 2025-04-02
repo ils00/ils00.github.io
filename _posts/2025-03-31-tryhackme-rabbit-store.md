@@ -1,7 +1,7 @@
 ---
 title: "Rabbit Store - THM | by ils00"
 author: ils00
-categories: [TryHackMe]
+categories: [TryHackMe, Medium]
 tags: [web, js, jwt, api, ssrf, ssti, rabbitmq, erlang]
 render_with_liquid: false
 media_subpath: /img_p/rabbit-store-thm
