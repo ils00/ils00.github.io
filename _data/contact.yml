@@ -7,6 +7,9 @@
   icon: "fab fa-linkedin"   # icons powered by <https://fontawesome.com/>
   url:  "https://www.linkedin.com/in/ian-nicolas-lopez-sanchez-793137340"                  # Fill with your Linkedin homepage
 
+- type: tryhackme
+  icon: "fas fa-user-secret"  # You can change this to a custom icon if you like
+  url: "https://tryhackme.com/p/ils00"  # Replace with your TryHackMe profile link
 
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'

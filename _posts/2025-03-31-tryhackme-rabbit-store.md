@@ -2,7 +2,7 @@
 title: "Rabbit Store - THM | by ils00"
 author: ils00
 categories: [TryHackMe]
-tags: [web, js, jwt, fuzzing, mass assignment, api, ssrf, ssti, rabbitmq, erlang]
+tags: [web, js, jwt, api, ssrf, ssti, rabbitmq, erlang]
 render_with_liquid: false
 media_subpath: /img_p/rabbit-store-thm
 image:
