@@ -6,7 +6,7 @@ tags: [web, burpsuite, wordpress, lfi, rce, bruteforce, backdoor, reversing, piv
 render_with_liquid: false
 media_subpath: /img_p/smol_thm
 image:
-  path: smol_logo.jpeg
+  path: smol_logo.webp
 ---
 
 Esta es una de las maneras de resolver la máquina **Smol** de **TryHackMe** con categoría **Media** en la plataforma.
@@ -109,13 +109,13 @@ Una de las primeras búsquedas:
 
 ![](vuln.webp)
 
-[pentest-tools.com]([WordPress JSmol2WP &lt;=1.07 - Local File Inclusion (CVE-2018-20463) - Vulnerability &amp; Exploit Database](https://pentest-tools.com/vulnerabilities-exploits/wordpress-jsmol2wp-107-local-file-inclusion_2654?source=post_page-----929d2de05e82---------------------------------------))
+[pentest-tools.com](https://pentest-tools.com/vulnerabilities-exploits/wordpress-jsmol2wp-107-local-file-inclusion_2654)
 
 Si seguimos investigando podemos ver que mediante una consulta por la URL podemos ver el contenido de los ficheros. Lo que es un **LFI.**
 
 En esta página podemos ver la query.
 
-[wpscan.com]([JSmol2WP &lt;= 1.07 &#8211; Unauthenticated Server Side Request Forgery (SSRF) | CVE 2018-20463 | Plugin Vulnerabilities](https://wpscan.com/vulnerability/ad01dad9-12ff-404f-8718-9ebbd67bf611/?source=post_page-----929d2de05e82---------------------------------------))
+[wpscan.com](https://wpscan.com/vulnerability/0bbf1542-6e00-4a68-97f6-48a7790d1c3e/))
 
 `http://localhost:8080/wp-content/plugins/jsmol2wp/php/jsmol.php?isform=true&call=getRawDataFromDatabase&query=php://filter/resource=../../../../wp-config.php`
 
