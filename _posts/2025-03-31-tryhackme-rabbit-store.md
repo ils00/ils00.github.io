@@ -4,7 +4,7 @@ author: ils00
 categories: [TryHackMe, Medium]
 tags: [web, js, jwt, api, ssrf, ssti, rabbitmq, erlang]
 render_with_liquid: false
-media_subpath: /img_p/rabbit-store-thm
+media_subpath: /img_p/rabbit_store_thm
 image:
   path: logo.webp
 ---
