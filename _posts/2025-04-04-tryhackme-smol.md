@@ -6,7 +6,7 @@ tags: [web, burpsuite, wordpress, lfi, rce, bruteforce, backdoor, reversing, piv
 render_with_liquid: false
 media_subpath: /img_p/smol_thm
 image:
-  path: smol_logo.webp
+  path: smol_logo.jpeg
 ---
 
 Esta es una de las maneras de resolver la máquina **Smol** de **TryHackMe** con categoría **Media** en la plataforma.
@@ -200,7 +200,7 @@ Ya que poseemos de un RCE, vamos a intentar colar una reverse shell a ver si pod
 
 Primeramente, generamos un fichero de reverse shell, yo en este caso no he usado oneliner he usado una reverse shell de php.
 
-[pentestermonkey_shell]([php-reverse-shell/php-reverse-shell.php at master · pentestmonkey/php-reverse-shell · GitHub](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php?source=post_page-----929d2de05e82---------------------------------------))
+[pentestmonkey_shell](https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/refs/heads/master/php-reverse-shell.php)
 
 Modificamos los campos como la **IP** y el **PUERTO**.
 
