@@ -1,3 +1,15 @@
+---
+title: "Include - THM | by ils00"
+author: ils00
+categories: [TryHackMe, Medium]
+tags: [web, ssrf, api, lfi, bruteforce]
+render_with_liquid: false
+media_subpath: /img_p/include_thm
+image:
+  path: logo.png
+---
+
+
 Esta es una de las maneras de resolver la máquina **Include** de TryHackMe con categoría **Media** en la plataforma. Esta es una sala que se encuentra en la ruta de aprendizaje **Advanced Service-Side Attacks**.
 
 ![](maquina.webp)
