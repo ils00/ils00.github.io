@@ -375,3 +375,5 @@ Ya tenemos la segunda bandera.
 ## Conclusión:
 
 En conclusión esta máquina es bastante avanzada, por mi parte me ha llevado bastante tiempo para poder realizarla debido a que no es muy estable. Me ha llevado alrededor de 5h poder realizarla con ayuda en algunos casos y documentarme sobre el temario aprendido.
+
+~~XIII~~
