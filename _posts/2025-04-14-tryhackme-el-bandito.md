@@ -13,7 +13,7 @@ Esta es una de las maneras de resolver la máquina **El Bandito** de **TryHackMe
 
 ![](maquina.png)
 
-#### Conceptos Previos:
+## Conceptos Previos:
 
 - Burp Suite
 - Enumeración con Nmap y Gobuster
@@ -27,7 +27,7 @@ Creamos una jerarquía de directorios para poder tenerlo todo organizado.
 
 ![](jerarquia.png)
 
-#### Escaneo de Puertos:
+## Escaneo de Puertos:
 
 Primeramente, lanzamos una traza ICMP hacia la máquina víctima para ver si responde.
 
@@ -35,7 +35,7 @@ Primeramente, lanzamos una traza ICMP hacia la máquina víctima para ver si res
 
 Una vez que nos responde analizamos la traza y podemos ver el TTL que es igual a **63** por lo tanto estamos ante una máquina **Linux**.
 
-#### Escaneo de Puertos:
+## Escaneo de Puertos:
 
 Lanzamos el primer comando de escaneo de **Nmap** que nos dará una vista de más o menos a que nos nos estamos enfrentando.
 
@@ -163,7 +163,7 @@ Puerto **631** IPP → Este puerto es el Protocolo de Impresión de Internet. Es
 
 Puerto **8080** HTTP-PROXY → Proxy 
 
-#### Análisis (I):
+## Análisis (I):
 
 He abierto primeramente la web por el puerto **80** y me ha saltado este error:
 
@@ -195,7 +195,7 @@ El WebSocket es un protocolo de comunicación informática que proporciona un ca
 
 ![](codigo.png)
 
-**Contrabando de solicitudes (I):** 
+##Contrabando de solicitudes (I): 
 
 Lo más seguro que tengamos que hacer un contrabando de solicitudes ua que este es un desafío posterior a ver todo este contenido.
 
@@ -225,7 +225,7 @@ Aquí podemos confirmar con mi fichero extraído del análisis de **gobuster**.
 
 Ahora me puse a buscar como poder explotar esto y encontré esta forma:
 
-#### Explotación (I):
+## Explotación (I):
 
 En las salas de explicación previa a esta práctica nos dicen que podemos habilitar el contrabando de solicitudes mediante las actualizaciones de **WebSocket**. Crearemos una solicitud malformada para que el proxy asuma que se ha realizando una actualización **WebSocket**, pero al versión del backend se encontrará igual.
 
@@ -352,7 +352,7 @@ Lo primero que voy a probar van a ser el usuario y la contraseña que me he guar
 
 Ya tenemos acceso a la web, y podemos seleccionar los chats de Jack y Oliver.
 
-#### Explotación (II):
+## Explotación (II):
 
 Vamos a jugar un poco con Burp Suite para ver como se envían los mensajes. Por lo que he decidido enviar una solicitud de todo.
 
@@ -374,6 +374,6 @@ Después de enviar la solicitud se queda congelado durante unos segundos y al po
 
 Ya tenemos la segunda bandera.
 
-#### Conclusión:
+## Conclusión:
 
 En conclusión esta máquina es bastante avanzada, por mi parte me ha llevado bastante tiempo para poder realizarla debido a que no es muy estable. Me ha llevado alrededor de 5h poder realizarla con ayuda en algunos casos y documentarme sobre el temario aprendido.
