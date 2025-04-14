@@ -27,8 +27,6 @@ Creamos una jerarquía de directorios para poder tenerlo todo organizado.
 
 ![](jerarquia.png)
 
-## Escaneo de Puertos:
-
 Primeramente, lanzamos una traza ICMP hacia la máquina víctima para ver si responde.
 
 ![](ping.png)
@@ -163,7 +161,7 @@ Puerto **631** IPP → Este puerto es el Protocolo de Impresión de Internet. Es
 
 Puerto **8080** HTTP-PROXY → Proxy 
 
-## Análisis (I):
+## Análisis:
 
 He abierto primeramente la web por el puerto **80** y me ha saltado este error:
 
