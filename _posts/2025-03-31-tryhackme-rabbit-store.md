@@ -9,7 +9,6 @@ image:
   path: logo.webp
 ---
 
-# Rabbit Store — CTF — WriteUP — THM | by Ian Lopez
 
 Esta es una de las maneras de resolver la máquina **Rabbit Store** de **TryHackMe** con categoria **Media** en la plataforma.
 
