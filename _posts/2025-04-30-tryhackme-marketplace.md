@@ -95,7 +95,7 @@ Me he creado un usuario para ver como se comporta la web.
 
 Al parecer en el puerto **32768** también aparece la misma página.
 
-## 
+ 
 
 ## Análisis II:
 
@@ -343,7 +343,6 @@ Vamos a informarnos sobre esto.
 
 Entramos a GTFOBins
 
-[https://gtfobins.github.io/gtfobins/docker/](https://gtfobins.github.io/gtfobins/docker/)
 
 ![](shell_bins.png)
 
