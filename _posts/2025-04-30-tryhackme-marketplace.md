@@ -340,6 +340,7 @@ Vamos a ver qué privilegios tiene el usuario michael con el comando **id**.
 Podemos ver que somos miembros del grupo DOKER.
 
 Vamos a informarnos sobre esto.
+[](https://gtfobins.github.io/gtfobins/docker/)
 
 Entramos a GTFOBins
 
