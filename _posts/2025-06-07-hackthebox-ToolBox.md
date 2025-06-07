@@ -15,6 +15,14 @@ Esta es una manera sencilla de resolver la máquina **ToolBox** de **HackTheB
 
 ## Conocimientos Previos:
 
+- Conocimientos basicos de Escaneo de Puertos
+- Conceptos básicos de Windows
+- SQLi
+- Doker
+- Burp Suite
+- Escalada de privilegios básica
+
+
 Después de saber todo esto, vamos a comenzar!!!
 
 **** ESPERAR 5 MINUTOS ANTES DE EMPEZAR CON LOS ESCANEOS ****
