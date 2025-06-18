@@ -1,5 +1,5 @@
 ---
-title: "ToolBox - THB | by ils00"
+title: "ToolBox - HTB | by ils00"
 author: ils00
 categories: [HackTheBox, Fácil]
 tags: [web, ejpt, windows, sqli, burpsuie, docker, id_rsa]
