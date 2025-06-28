@@ -176,7 +176,7 @@ Ahora que tenemos la contraseña vamos a ingresar al servicio:
 
 ![](ldap.png)
 
-` ldapsearch -x -H ldap://10.10.11.174 -D "support\\ldap" -w 'X' -b "dc=support,dc=htb" > ldap.txt`
+`ldapsearch -x -H ldap://10.10.11.174 -D "support\\ldap" -w 'X' -b "dc=support,dc=htb" > ldap.txt`
 
 Una vez sacado toda la información y haberla metido dentro del fichero **ldap.txt,** analizemos el fichero en busca de usuarios.
 
@@ -230,7 +230,7 @@ Lo que vamos a realizar es un escaneo del dominio ya que tenemos un usuario del 
 
 Primero, ejecutamos la herramienta **neo4j** con el comando:
 
-neo4j console
+`neo4j console`
 
 Una vez ejecutado, vamos a un navegador y buscamos “http://localhost:7474”, cambiamos la contraseña a una que queramos y posteriormente, ejecutamos el comando de **bloodhound**.
 
