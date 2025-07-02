@@ -1,7 +1,7 @@
 ---
 title: "Support - HTB | by ils00"
 author: ils00
-categories: [HackTheBox, Easy]
+categories: [HackTheBox, Fácil]
 tags: [web, eJPT, ActiveDirectory, ldap, winrm, smb, scripting, bloodhound]
 render_with_liquid: false
 media_subpath: /img_p/support_htb
