@@ -1,5 +1,5 @@
 ---
-title: "Hauk - THM | by ils00"
+title: "Hauk - HTB | by ils00"
 author: ils00
 categories: [HackTheBox, Medium]
 tags: [web, ftp, pivoting, bash, database]
