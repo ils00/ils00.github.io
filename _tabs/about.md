@@ -6,4 +6,9 @@ order: 4
 
 # ¡Hola! Soy **ils00** 👋
 
-Soy estudiante de **ciberseguridad** con 2 años de experiencia práctica en **Red Teaming** y **Pentesting**, participando activamente en **CTFs** y otros desafíos de seguridad. Aunque aún no he trabajado de manera formal en el área, estoy completamente enfocado en seguir aprendiendo y en dedicarme profesionalmente a la **ciberseguridad**.
+Llevo más de **3 años metido de lleno en la ciberseguridad ofensiva**, aprendiendo, rompiendo y experimentando con **CTFs, laboratorios y proyectos propios**. Durante este tiempo he ido puliendo mis habilidades en **Red Teaming, Pentesting y hacking ético**, siempre con ganas de aprender algo nuevo.
+
+Hace poco di el salto al mundo profesional y ahora formo parte del **Red Team de una empresa como Pentester**, poniendo en práctica todo lo aprendido y enfrentándome a retos reales.
+
+Cuento con la certificación **eJPT**, que respalda mis conocimientos en **pentesting, redes y explotación de sistemas**.  
+Pero más allá del papel, lo que me mueve es **seguir mejorando, compartir lo que aprendo y crecer dentro del mundo de la ciberseguridad ofensiva**.
